@@ -25,6 +25,7 @@ body {
     background-color: var(--Grayish-blue);
     max-width: 1440px;
 }
+
 .container {
     display: flex;
     flex-direction: column;
