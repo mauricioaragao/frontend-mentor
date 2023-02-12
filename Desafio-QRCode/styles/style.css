@@ -7,6 +7,8 @@
 --Light-gray: #d6e2f0;
 --Grayish-blue: #d5e1ef;
 --Dark-blue: #1f3251;
+--Cor-ancora: #3e52a3;
+--Black: #000000;
 
 --fonte: 'Outfit', sans-serif;
 }
@@ -54,10 +56,10 @@ p {
     margin: -4%;
 }
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: var(--Cor-ancora);
 }
 
 .attribution a:hover {
-    color: black;
+    color: var(--Black);
     font-weight: bold;
 }
