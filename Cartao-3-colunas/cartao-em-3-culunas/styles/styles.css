@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Outfit:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;400&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Outfit:wght@400;700&display=swap');
 
@@ -23,31 +23,93 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: var(--fonte-principal);
-    font-size: 15px;
 }
 
 body {
-    background-color: var(--Grayish-blue);
+    background-color: var(--Cor-background-headings-buttons);
     max-width: 1440px;
 }
 
 .container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     margin: 10% auto;
-    width: 320px;
-    height: auto;
-    border-radius: 20px;
-    padding: 15px 15px 30px 15px;
+    border: 1px solid black;
+    border-radius: 15px;
+
+}
+
+.sedans, .suvs, .luxury {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 50px;
+    row-gap: 30px;
+}
+
+.sedans img, .suvs img, .luxury img {
+    width: 60px;
+}
+
+.sedans {
+    background-color: var(--Bright-orange);
+}
+
+.sedans a {
+    color: var(--Bright-orange);
     background-color: var(--White);
-    row-gap: 15px;
+    padding: 10px 30px;
+    border-radius: 25px;
+}
+
+.suvs {
+    background-color: var(--Dark-cyan);
+}
+
+.suvs a {
+    color: var(--Dark-cyan);
+    background-color: var(--White);
+    padding: 10px 30px;
+    border-radius: 25px;
+}
+
+.luxury {
+    background-color: var(--Very-dark-cyan);
+}
+
+.luxury a {
+    color: var(--Very-dark-cyan);
+    background-color: var(--White);
+    padding: 10px 30px;
+    border-radius: 25px;
+}
+
+.sedans a, .suvs a, .luxury a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: var(--fonte-estilo);
+}
+
+p {
+    font-family: var(--fonte-principal);
+    color: var(--Cor-paragrafos);
+    font-size: 15px;
 }
 
 .attribution {
     font-size: 11px; text-align: center;
+    margin: -9%;
 }
+
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: var(--Cor-ancora);
+}
+
+.attribution a:hover {
+    color: var(--Black);
+    font-weight: bold;
 }
