@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100;200;400&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Outfit:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Outfit:wght@700&display=swap');
 
 :root {
     --White: #ffffff;
@@ -20,89 +20,81 @@
 }
 
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
     background-color: var(--Cor-background-headings-buttons);
-    max-width: 1440px;
+    min-height: 100vh;
+    font-family: var(--fonte-principal);
+    font-size: 0.9em;
 }
 
 .container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 10% auto;
-    border: 1px solid black;
-    border-radius: 15px;
-
-}
-
-.sedans, .suvs, .luxury {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    padding: 50px;
-    row-gap: 30px;
-}
-
-.sedans img, .suvs img, .luxury img {
-    width: 60px;
+    color: var(--Cor-background-headings-buttons);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    max-width: 57.5em;
+    border-radius: 1em;
+    overflow: hidden;
 }
 
 .sedans {
     background-color: var(--Bright-orange);
 }
 
-.sedans a {
-    color: var(--Bright-orange);
-    background-color: var(--White);
-    padding: 10px 30px;
-    border-radius: 25px;
-}
-
 .suvs {
     background-color: var(--Dark-cyan);
-}
-
-.suvs a {
-    color: var(--Dark-cyan);
-    background-color: var(--White);
-    padding: 10px 30px;
-    border-radius: 25px;
 }
 
 .luxury {
     background-color: var(--Very-dark-cyan);
 }
 
+.cartoes {
+    display: flex;
+    flex-direction: column;
+    padding: 3em;
+    row-gap: 2em;
+}
+
+.cartoes img {
+    width: 4em;
+}
+.cartoes h1 {
+    font-family: var(--fonte-estilo);
+    font-size: 2.5em;
+}
+
+.cartoes p:last-of-type {
+    padding-top: 3em;
+
+}
+
+.cartoes a {
+    background-color: var(--Cor-background-headings-buttons);
+    text-decoration: none;
+    border-radius: 2em;
+    padding: 0.5em 2em;
+}
+
+.sedans a {
+    color: var(--Bright-orange);
+}
+
+.suvs a {
+    color: var(--Dark-cyan);
+}
+
 .luxury a {
     color: var(--Very-dark-cyan);
-    background-color: var(--White);
-    padding: 10px 30px;
-    border-radius: 25px;
-}
-
-.sedans a, .suvs a, .luxury a {
-    text-decoration: none;
-}
-
-h1 {
-    font-family: var(--fonte-estilo);
-}
-
-p {
-    font-family: var(--fonte-principal);
-    color: var(--Cor-paragrafos);
-    font-size: 15px;
 }
 
 .attribution {
     font-size: 11px; text-align: center;
-    margin: -9%;
 }
 
 .attribution a {
