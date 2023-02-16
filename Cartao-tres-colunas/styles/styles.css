@@ -63,18 +63,19 @@ body {
     flex-direction: column;
     padding: 3em;
     row-gap: 2em;
+    min-height: 500px;
 }
 
 .cartoes img {
-    width: 4em;
+    width: 5em;
 }
 .cartoes h1 {
     font-family: var(--fonte-estilo);
-    font-size: 2.5em;
+    font-size: 3em;
 }
 
 .cartoes p:last-of-type {
-    padding-top: 3em;
+    padding-top: 6em;
 
 }
 
@@ -82,7 +83,7 @@ body {
     background-color: var(--Cor-background-headings-buttons);
     text-decoration: none;
     border-radius: 2em;
-    padding: 0.5em 2em;
+    padding: 1em 2em;
 }
 
 .sedans a {
