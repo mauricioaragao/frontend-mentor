@@ -41,7 +41,7 @@ header {
     max-width: 500px;
     text-align: center;
     margin-bottom: 40px;
-    padding: 0px 15px;
+    padding: 0px 20px;
 }
 
 header h1 {
@@ -98,6 +98,21 @@ header p {
     height: 10px;
     margin: -24px -24px 10px -24px;
     border-radius: 10px 10px 0px 0px;
+}
+
+.cor1 {
+    background-color: var(--Cyan);
+}
+
+.cor2 {
+    background-color: var(--Red);
+}
+
+.cor3 {
+    background-color: var(--Orange);
+}
+
+.cor4 {
     background-color: var(--Blue);
 }
 
@@ -111,6 +126,10 @@ header p {
     font-size: 11px;
 }
 
+.attribution a:hover {
+    color: var(--Black);
+    font-weight: bold;
+}
 
 @media only screen and (max-width: 1024px){
     .card-principal {
