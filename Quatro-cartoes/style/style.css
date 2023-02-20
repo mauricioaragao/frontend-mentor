@@ -192,6 +192,15 @@ main {
         font-size: 13px;
     }
 
+    .icones {
+        display: block;
+        text-align: right;
+    }
+
+    .icones img {
+        width: 40px;
+    }
+
     .attribution {
         font-size: 9px;
     }
