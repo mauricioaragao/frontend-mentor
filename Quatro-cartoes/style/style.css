@@ -172,12 +172,12 @@ main {
 
 @media(max-width: 325px){
     body {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
     header h1 {
-        font-size: 21px;
+        font-size: 20px;
     }
 
     header p {
