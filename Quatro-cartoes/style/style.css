@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
 
 :root {
+    --White: #ffffff;
     --Red: #ea5353;
     --Cyan: #45d3d3;
     --Orange: #fcaf4a;
@@ -24,9 +25,12 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+    justify-content: center;
+    background-color: var(--VeryLightGray);
     font-family: var(--fonte-principal);
     font-size: 15px;
-    margin: 70px 15px;
+    margin: 70px  auto 15px auto;
+    max-width: 1440px;
 }
 
 /* Configuração do header */
@@ -40,12 +44,77 @@ header {
 
 header h1 {
     padding-bottom: 10px;
+    color: var(--VeryDarkBlue);
+    font-size: 30px;
 }
 
 header h1 > span {
     font-weight: lighter;
+    color: var(--GrayishBlue);
+    font-weight: 200;
 }
 
+header p {
+    color: var(--GrayishBlue);
+}
+
+/* Configurando o main */
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.cartoes {
+    background-color: var(--White);
+    border-top: 3px solid transparent;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px 0px #a3a5aea9;
+    width: 100%;
+    max-width: 375px;
+    margin:15px;
+    padding: 30px 15px 30px 30px;
+    text-align: left;
+}
+
+/* Colocando cores na borda superior dos cards */
+
+.cartoes:nth-child(1) {
+    border-color: var(--Cyan);
+}
+
+.cartoes:nth-child(2) {
+    border-color: var(--Red);
+}
+
+.cartoes:nth-child(3) {
+    border-color: var(--Blue);
+}
+
+.cartoes:nth-child(4) {
+    border-color: var(--Orange);
+}
+
+/* Configurando os itens internos do dos cards */
+
+.cartoes h2 {
+    color: var(--VeryDarkBlue);
+}
+
+.cartoes p {
+    color: var(--GrayishBlue);
+    padding: 15px 0px 40px 0px;
+    line-height: 24px;
+}
+
+.icones {
+    display: block;
+    text-align: right;
+    padding-right: 15px;
+}
 
 .attribution {
     font-size: 11px; text-align: center;
@@ -58,4 +127,32 @@ header h1 > span {
 .attribution a:hover {
     color: var(--Black);
     font-weight: bold;
+}
+
+@media(min-width: 1215px) {
+    .cartoes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 0;
+    }
+
+    .cardColuna {
+        transform: translateY(50%);
+    }
+}
+
+@media(max-width: 425px){
+    header h1 {
+        font-size: 24px;
+    }
+
+    .cartoes h2 {
+        font-size: 20px;
+    }
+
+    .cartoes p {
+        font-size: 14px;
+    }
 }
