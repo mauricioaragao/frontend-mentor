@@ -187,4 +187,8 @@ main {
     .cartoes p {
         font-size: 13px;
     }
+
+    .attribution {
+        font-size: 9px;
+    }
 }
