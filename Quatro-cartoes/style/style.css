@@ -119,7 +119,7 @@ main {
 /* Configuração do footer */
 
 .attribution {
-    font-size: 11px; text-align: center;
+    font-size: 12px; text-align: center;
 }
 
 .attribution a {
@@ -163,6 +163,10 @@ main {
 
     .cartoes p {
         font-size: 13px;
+    }
+
+    .attribution {
+        font-size: 9px;
     }
 }
 
