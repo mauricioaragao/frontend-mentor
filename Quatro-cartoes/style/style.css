@@ -170,14 +170,14 @@ main {
     }
 }
 
-@media(max-width: 325px){
+@media(max-width: 320px){
     body {
         padding-left: 10px;
         padding-right: 10px;
     }
 
     header h1 {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     header p {
@@ -185,7 +185,7 @@ main {
     }
 
     .cartoes h2 {
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .cartoes p {
