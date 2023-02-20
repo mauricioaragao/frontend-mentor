@@ -116,6 +116,8 @@ main {
     padding-right: 15px;
 }
 
+/* Configuração do footer */
+
 .attribution {
     font-size: 11px; text-align: center;
 }
@@ -128,6 +130,8 @@ main {
     color: var(--Black);
     font-weight: bold;
 }
+
+/* Responsividade */
 
 @media(min-width: 1215px) {
     .cartoes {
